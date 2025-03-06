@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const num = parseInt(prompt("Enter marks here:"));
+
+        if (num > 100 && num < 0) {
+            alert("Please enter your real marks");
+        }
+        else if(num >= 50 && num <= 100) {
+            alert("PASSED");
+        }else if(num>=0 && num<=50) {
+            alert("FAILED");
+        }
+
+    </script>
+
+</body>
+
+</html>

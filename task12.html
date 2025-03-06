@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>descending</title>
+  </head>
+  <body>
+    <script>
+      const size = parseInt(prompt("Enter the size of the array:"));
+
+      let arr = prompt(`Enter ${size} array elements separated by commas:`)
+        .split(",")
+        .map(Number);
+
+      let sortedArray = arr.sort((a, b) => b - a);
+
+      alert(`Array in descending order: ${sortedArray.join(", ")}`);
+    </script>
+  </body>
+</html>

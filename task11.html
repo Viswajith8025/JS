@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count Even Numbers</title>
+  </head>
+  <body>
+    <script>
+      const size = parseInt(prompt("Enter the size of the array:"));
+
+    
+        let arr = prompt(`Enter ${size} array elements separated by commas:`)
+          .split(",")
+          .map(Number);
+
+        let evenCount = arr.filter((num) => num % 2 === 0).length;
+
+        alert(`Number of even numbers in the given array is: ${evenCount}`);
+  
+    </script>
+  </body>
+</html>
